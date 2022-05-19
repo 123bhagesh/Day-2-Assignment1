@@ -1,10 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
+import './Todoinput.css'
 
 export const TodoInput = ({addTodo}) => {
     const [value, setValue] = useState("")
     return (
-      <div>Todo
+      <div className='Todoinput'>
       <input type="text" value = {value}
       onChange ={(e) => {
         setValue(e.target.value);
@@ -22,5 +23,3 @@ export const TodoInput = ({addTodo}) => {
   </div>
 )}
 
-// const 
-// const todo =()=>

@@ -1,14 +1,15 @@
 import React from 'react'
+import './Todolist.css'
 
 export const TodoList = ({todos}) => {
   return (
-    <div>
+    <div className='Todolist'>
       <h2>Todo List</h2>
-      <ul>
+      <div>
           {todos.map((todo) =>{
-              return <li>{todo}</li>
+              return <div className='list'>{todo}</div> 
           })}
-      </ul>
+      </div>
     </div>
   )
 }

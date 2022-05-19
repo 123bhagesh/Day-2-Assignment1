@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { TodoInput } from './TodoInput'
 import { TodoList } from './TodoList'
+import './TodoDiv.css'
 
 // const 
 // const todo =()=>
@@ -11,7 +12,8 @@ const Todo = () => {
     setTodos([...todos, xyz])
   }
   return (
-    <div>Todo
+    <div className='TodoDiv'>
+      <h1>Todo Application</h1>
      <TodoInput addTodo={addTodo} />
       <TodoList todos ={todos} />
         {/* {todos.map((todo) =>{
